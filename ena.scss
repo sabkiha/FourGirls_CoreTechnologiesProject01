@@ -1,0 +1,163 @@
+//Variables
+$font: 'Open Sans',
+sans-serif;
+$back: #616B81;
+$hover: #778093;
+$green: #419a1c;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    float: left;
+    height: 60px;
+    margin: 10px 0;
+    
+    img {
+        margin-top: 0;
+    }
+    
+    nav {
+        float: right;
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: $font;
+        font-size: 200%;
+        margin: 0 20px;
+        }:hover {
+            text-transform: lowercase;
+            color: $green;
+        }
+
+    }
+}
+
+.clear {
+    clear:both;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    padding: 0 10px;
+    background-color: $back;
+
+    div {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .back {
+        margin-bottom: 70px;
+
+        a {
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    #icon {
+        color: white;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    :hover {
+        color: $green;
+    }
+
+    .sidenav {
+        height: 35%;
+        width: 0;
+        margin: 100px 70px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(97, 107, 129, 0.5);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+        color: white;
+        font-family: $font;
+
+        #side {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        p {
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            :hover {
+                color: $hover;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+.intro {
+    width: 100%;
+    background-image: url(ena/background03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: $font;
+    padding: 100px;
+    padding-left: 400px;
+    height: 700px;
+    text-align: left;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+    .cf {
+        text-decoration: none;
+        color: white;
+    }.cf:hover {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        
+    }
+}

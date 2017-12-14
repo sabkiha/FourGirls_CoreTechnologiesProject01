@@ -1,0 +1,121 @@
+// Variables
+$font: 'Open Sans', sans-serif;
+$green: #419a1c;
+
+* {
+    box-sizing: border-box;
+}
+ 
+// header all pages
+header {
+    width: 100%;
+    float: left;
+    height: 60px;
+    
+    img {
+        margin-top: 0;
+    }
+    
+    nav {
+        float: right;
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: $font;
+        font-size: 200%;
+        margin: 0 20px;
+        }:hover {
+            text-transform: lowercase;
+            color: $green;
+        }
+
+    }
+}
+
+.clear {
+    clear:both;
+}
+
+// contact
+.coffee {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    
+    img {
+        width: 20%;
+    }
+}
+
+// contact - map
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    font-family: $font;
+}
+
+#panel {
+    display: none;
+}
+
+#flip {
+    margin-top: 30px;
+    font-size: 30px;
+    
+    p{
+        
+    }:hover {
+        text-transform: lowercase;
+        color: $green;
+    }
+}
+
+
+
+// subtitle all pages  
+.us {
+    width: 100%;
+    text-align: center;
+    font-family: $font;
+    margin-top: 30px;
+    h1 {
+        font-size: 250%;
+        margin: 0; 
+    }
+}
+
+// index image grid 
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#port:hover {
+    opacity: 0.7; 
+}
+
+// for index
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

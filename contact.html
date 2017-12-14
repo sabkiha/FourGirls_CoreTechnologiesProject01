@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Four Girls</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+</head>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb8i5JpEkHelDaJuC3G5-jv0XYQhc-Elo&callback=myMap"></script>
+<script>
+    function displayMap() {
+        document.getElementById('panel').style.display = "block";
+        initialize();
+    }
+
+    function initialize() {
+        var myCenter = new google.maps.LatLng(48.196493, 16.359415);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+            center: myCenter,
+            zoom: 18
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+            position: myCenter
+        });
+        marker.setMap(map);
+    }
+</script>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="img/logo.png" width="20%"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="us">
+        <hr>
+        <h1>FourGirls | Contact</h1>
+        <p>How can we collaborate?</p>
+        <hr>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="coffee">
+        <img src="img/coffee1.png">
+    </div>
+
+
+    <div id="flip" onclick="displayMap()">
+        <p>Contact us!</p>
+    </div>
+    <div id="panel">
+        <div id="map" style="width:100%;height:300px"></div>
+        <p>Ena Weigl, Madiha Fawzy, Sabine Hartmann, Giava Ferrandina</p>
+        <p>Kettenbrückengasse 23/2/12</p>
+        <p>1050 Wien</p>
+        <p><a href="mailto:office@fourgirls.com" target="_top">office@fourgirls.com</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

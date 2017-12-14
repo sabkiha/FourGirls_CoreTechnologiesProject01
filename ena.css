@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+header {
+  width: 100%;
+  float: left;
+  height: 60px;
+  margin: 10px 0; }
+  header img {
+    margin-top: 0; }
+  header nav {
+    float: right; }
+    header nav a {
+      text-decoration: none;
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      font-size: 200%;
+      margin: 0 20px; }
+    header nav :hover {
+      text-transform: lowercase;
+      color: #419a1c; }
+
+.clear {
+  clear: both; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 5%;
+  padding: 0 10px;
+  background-color: #616B81; }
+  aside div {
+    text-align: center;
+    margin-top: 30px; }
+  aside .back {
+    margin-bottom: 70px; }
+    aside .back a {
+      font-size: 20px;
+      color: white; }
+  aside #icon {
+    color: white;
+    font-size: 30px;
+    padding-top: 30px; }
+  aside :hover {
+    color: #419a1c; }
+  aside .sidenav {
+    height: 35%;
+    width: 0;
+    margin: 100px 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(97, 107, 129, 0.5);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 40px;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+    aside .sidenav #side {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    aside .sidenav p {
+      margin-top: 20px; }
+      aside .sidenav p a {
+        text-decoration: none;
+        color: white; }
+      aside .sidenav p :hover {
+        color: #778093; }
+    aside .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px; }
+    @media screen and (max-height: 450px) {
+      aside .sidenav .sidenav {
+        padding-top: 15px; }
+      aside .sidenav .sidenav a {
+        font-size: 18px; } }
+
+.intro {
+  width: 100%;
+  background-image: url(ena/background03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
+  padding-left: 400px;
+  height: 700px;
+  text-align: left; }
+  .intro h1 {
+    font-size: 50px; }
+  .intro p {
+    font-size: 20px; }
+  .intro .cf {
+    text-decoration: none;
+    color: white; }
+  .intro .cf:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy; }

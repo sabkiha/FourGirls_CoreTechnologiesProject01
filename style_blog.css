@@ -1,0 +1,93 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    float: left;
+    height: 60px;
+}
+
+header img {
+    margin-top: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 200%;
+    margin: 0 20px;
+}
+
+header nav :hover {
+    text-transform: lowercase;
+    color: #419a1c;
+}
+
+.us {
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.us h1 {
+    font-size: 250%;
+    margin: 0;
+}
+
+.blog {
+    width: 100;
+    margin: 50px 200px;
+}
+
+li {
+    font-family: "Open Sans", sans-serif;
+    list-style: url('img/arrow.png')
+}
+
+li:hover {
+    text-transform: lowercase;
+}
+
+.blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog a:hover {
+    color: #419A1C;
+    font-weight: bold;
+}
+
+.blog p {
+    font-size: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.page-content {
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.post {
+    font-family: "Open Sans", sans-serif;
+    padding: 0 5% 0 5%;
+}
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
