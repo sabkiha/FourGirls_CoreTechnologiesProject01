@@ -49,11 +49,13 @@ header nav :hover {
 
 li {
     font-family: "Open Sans", sans-serif;
-    list-style: url('img/arrow.png')
+    list-style: url(img/arrow2.png);
+    
 }
 
 li:hover {
     text-transform: lowercase;
+    list-style: url('img/arrow.png')
 }
 
 .blog a {

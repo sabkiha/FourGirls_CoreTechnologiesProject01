@@ -62,7 +62,7 @@ aside {
   aside .sidenav {
     height: 35%;
     width: 0;
-    margin: 100px 70px;
+    margin: 250px 70px;
     position: fixed;
     z-index: 1;
     top: 0;
